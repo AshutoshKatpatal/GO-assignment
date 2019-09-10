@@ -22,14 +22,16 @@ func main() {
 
 		switch a {
 		case 1:
-			fmt.Println("\n\nEnter the Size of array")
+			fmt.Println("\n\nEnter even Size of array")
 			fmt.Scan(&n)
 			slice := generateSlice(n)
 			fmt.Println("\n--- Unsorted Evenly distributed Array --- \n\n", slice)
 			quicksort(slice)
 			fmt.Println("\n--- Sorted Evenly distributed Array ---\n\n", slice)
 		case 2:
-			slicea := generateSlice(25)
+                        fmt.Println("\n\nEnter odd no for Size of array")
+			fmt.Scan(&n)
+			slicea := generateSlice(n)
 			fmt.Println("\n--- Unsorted Unevenly distributed Array --- \n\n", slicea)
 			quicksort(slicea)
 			fmt.Println("\n--- Sorted Unevelny distributed Array ---\n\n", slicea)
