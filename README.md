@@ -20,6 +20,8 @@
 > $ cd `Directory where file is saved`
 
 > $ go run Main.go
+## To Run it online
+ - go to https://repl.it/repls/WeeForsakenRegression
 
 ## Author
 - Ashutosh Katpatal - [AshutoshKatpatal](https://github.com/AshutoshKatpatal)
