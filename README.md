@@ -21,7 +21,7 @@
 
 > $ go run Main.go
 ## To Run it online
- - go to https://repl.it/repls/WeeForsakenRegression
+ - go to https://repl.it/@AshutoshKatpata/Quicksort
 
 ## Author
 - Ashutosh Katpatal - [AshutoshKatpatal](https://github.com/AshutoshKatpatal)
