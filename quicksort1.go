@@ -24,21 +24,21 @@ func main() {
 		case 1:
 			fmt.Println("\n\nEnter even Size of array")
 			fmt.Scan(&n)
-			slice := generateSlice(n)
+			slice := createSlice(n)
 			fmt.Println("\n--- Unsorted Evenly distributed Array --- \n\n", slice)
 			quicksort(slice)
 			fmt.Println("\n--- Sorted Evenly distributed Array ---\n\n", slice)
 		case 2:
                         fmt.Println("\n\nEnter odd no for Size of array")
 			fmt.Scan(&n)
-			slicea := generateSlice(n)
+			slicea := createSlice(n)
 			fmt.Println("\n--- Unsorted Unevenly distributed Array --- \n\n", slicea)
 			quicksort(slicea)
 			fmt.Println("\n--- Sorted Unevelny distributed Array ---\n\n", slicea)
 		case 3:
 			fmt.Println("\n--- Enter a String of char and int ---\n\n")
 			fmt.Scan(&str)
-			r := generateRSlice(str)
+			r := createRSlice(str)
 			quicksort(r)
 			fmt.Println("\n--- Sorted String in ASCII --- \n\n", r)
 		case 4:
@@ -52,7 +52,7 @@ func main() {
 }
 
 // Generates a slice of size, size filled with random numbers
-func generateSlice(size int) []int {
+func createSlice(size int) []int {
 
 	slice := make([]int, size, size)
 	rand.Seed(time.Now().UnixNano())
@@ -87,7 +87,7 @@ func quicksort(a []int) []int {
 
 	return a
 }
-func generateRSlice(a string) []int {
+func createRSlice(a string) []int {
 	runes := []rune(a)
 	var result []int
 
