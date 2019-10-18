@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
+	"bufio"
 	"math/rand"
 	"time"
+	"os"
 )
 
 func main() {
-	var str string
 	var n int
 	loop := true
-
+  in := bufio.NewReader(os.Stdin)
 	for loop {
 		fmt.Println("Select the following operations to be done by quicksort")
 
@@ -37,10 +38,11 @@ func main() {
 			fmt.Println("\n--- Sorted Unevelny distributed Array ---\n\n", slicea)
 		case 3:
 			fmt.Println("\n--- Enter a String of char and int ---\n\n")
-			fmt.Scan(&str)
+			str,_ := in.ReadString('\n')
 			r := createRSlice(str)
 			quicksort(r)
 			fmt.Println("\n--- Sorted String in ASCII --- \n\n", r)
+      // the value 10 printed is for new line.
 		case 4:
 			loop = false
 		default:
